@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+
+    <div class="content">
+        <h1 class="title">Tic Tac Toe</h1>
+        <h3 class="displayTurn">C'est au tour de Joueur 1 !</h3>
+        <div id="counter"></div>
+        <div class="buttons">
+            <div id="resetBtn" class="btn">Recommencer</div>
+            <div id="restartBtn" class="btn">Nouvelle Partie</div>
+        </div>
+        <div class="gameWrapper">
+            <div class="gameboard">
+                <div class="box" id="0"></div>
+                <div class="box" id="1"></div>
+                <div class="box" id="2"></div>
+                <div class="box" id="3"></div>
+                <div class="box" id="4"></div>
+                <div class="box" id="5"></div>
+                <div class="box" id="6"></div>
+                <div class="box" id="7"></div>
+                <div class="box" id="8"></div>
+            </div>
+        </div>
+    </div>
+
+<div class="settings">
+    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open">
+    <label class="menu-open-button" for="menu-open">
+        <span class="changessettings"><i class="fa-solid fa-gears"></i></span>
+    </label>
+    
+    <a href="#" class="menu-item blue"><i class="fa-solid fa-volume-high"></i></a>
+    <a href="#" id = "changeImg" class="menu-item red"><i class="fa-sharp fa-solid fa-image"></i></a>
+    <a href="#" class="menu-item green"><i class="fa-solid fa-user-group"></i></a>
+    <a href="#" class="menu-item pink"><i class="fa-solid fa-robot"></i></a>
+    <a href="#" class="menu-item orange"><i class="fa-solid fa-circle-xmark"></i></a>
+    <a href="#" id = "reset" class="menu-item purple"><i class="fa-solid fa-rotate-left"></i></a>
+    
+</div>
+
+
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close"></span>
+            <p class="result"></p>
+        </div>
+    </div>
+    <div class="modal-wrapper">
+        <div id="initialForm" class="modal">
+            <!-- Initial Popup content -->
+            <div class="front-content">
+                <form id="myForm" autocomplete="off">
+                    <div class="inputField">
+                        <label class="input-label">(X) Nom Joueur n°1:</label>
+                        <input type="text" name="player1Name" class="formClass" id="form1" required />
+                    </div>
+                    <div class="inputField">
+                        <label class="input-label"> (O) Nom Joueur n°2:</label>
+                        <input type="text" name="player2Name" class="formClass" id="form2" required />
+                    </div>
+                    <div class="inputField">
+                        <label for="1v1" class="Title container">Joueur vs Amis:</label>
+                        <input type="radio" id="1v1" name="choice" value="0" required />
+                    </div>
+                    <div id = "easyRobot" class="inputField">
+                        <label for="ai" class="Title">Joueur vs ordinateur (Facile):</label>
+                        <input type="radio" id="ai" name="choice" value="1" required />
+                    </div>
+                    <div id = "easyRobot" class="inputField">
+                        <label for="ai" class="Title">Joueur vs ordinateur (Difficile):</label>
+                        <input type="radio" id="aiHard" name="choice" value="2" required />
+                    </div>
+                    <div class="flex">
+                        <button type="submit" class="startButton">Commencer la partie</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+            
+    
+
+</body>
+<script src="/js/script.js"></script>
+
+</html>
