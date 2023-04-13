@@ -625,6 +625,8 @@ input[type="radio"] {
 
     color: #ffffff;
     display: flex;
+    flex-direction : row;
+    gap: 20px;
     justify-content: center;
     padding-bottom: 2rem;
     font-size: 2rem;
