@@ -625,14 +625,13 @@ input[type="radio"] {
 
     color: #ffffff;
     display: flex;
-    flex-direction : row;
-    gap: 20px;
     justify-content: center;
     padding-bottom: 2rem;
     font-size: 2rem;
     text-shadow: 0 0 7px #b0f, 0 0 10px #000, 0 0 21px #000, 0 0 42px #5271ff,
     0 0 82px #b0f, 0 0 92px #b0f, 0 0 102px #b0f, 0 0 151px #b0f;
     height: 12%;
+    gap: 2rem;
 }
 
 #counterPlayer1 {
