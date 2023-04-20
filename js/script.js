@@ -237,8 +237,8 @@ const endConditions = (data) => {
       Xcounter++
       console.log(Xcounter);
       const pointPlayer1 = document.getElementById("counterPlayer1");
-      pointPlayer1.textContent = data.player1Name + "  " + ":" +  " " + Xcounter + " " + "point(s)" + "     ";      
-      pointPlayer2.textContent = data.player2Name + "   " + ":" + "  " + Ocounter +  "   " + "point(s)";     
+      pointPlayer1.textContent = data.player1Name + "  " + ":  " +  " " + Xcounter + " " + "point(s)" + "     ";      
+      pointPlayer2.textContent = "      "  + "     " + data.player2Name + "   " + ":" + "  " + Ocounter +  "   " + "point(s)";     
 
 
 
@@ -246,8 +246,8 @@ const endConditions = (data) => {
       Ocounter++
       console.log(Ocounter);
       const pointPlayer2 = document.getElementById("counterPlayer2");
-      pointPlayer2.textContent = data.player2Name + "  " + ":" +  " " + Ocounter + " " + "point(s)" + "     "; 
-      pointPlayer1.textContent = data.player1Name + "   " + ":" + "  " + Xcounter  +  "   " + "point(s)"; 
+      pointPlayer2.textContent = data.player2Name + "  " + ":    " +  " " + Ocounter + " " + "point(s)" + "     "; 
+      pointPlayer1.textContent = "      " + "     " + data.player1Name  + "   " + ":" + "  " + Xcounter  +  "   " + "point(s)"; 
 
     }
 
